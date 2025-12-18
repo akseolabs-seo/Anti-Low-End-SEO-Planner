@@ -1,4 +1,4 @@
-# 消除低端 SEO 計畫：內容戰略規劃師 (Anti-Low-End-SEO-Planner)
+# 消除低端 SEO 計畫：內容戰略SEO文章大綱規劃師 (Anti-Low-End-SEO-Planner)
 
 ![Status](https://img.shields.io/badge/Status-Experimental-orange)
 ![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-red)
