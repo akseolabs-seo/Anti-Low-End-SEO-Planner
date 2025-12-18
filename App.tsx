@@ -375,6 +375,7 @@ const App: React.FC = () => {
             <div className="space-y-4 text-[12px] text-slate-500 leading-relaxed">
               <p>本工具模擬的是<strong>低端但有效</strong>的 SEO 文章大綱邏輯。這些邏輯是基於 300 多位 SEO 人員面試經驗提煉而來，特別是那些「技術說不清，但排名就是有」的基礎操作模型。</p>
               <p>它並不代表 SEO 的全部，高端戰略需要更深的邏輯。本工具旨在打破基礎內容代寫的資訊不對稱。專案開源免費，嚴禁用於商業營利。</p>
+              <p>發文文章前確保你製作的文章符合最新的SEO規範。</p>
             </div>
           </div>
           <div className="md:text-right space-y-6">
