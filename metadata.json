@@ -1,5 +1,5 @@
 {
-  "name": "SEO Content Mastermind",
-  "description": "Professional SEO article generation tool using Gemini 3 Pro and Pro Image models for comprehensive competitor analysis and content creation.",
+  "name": "SEO 基礎邏輯模擬器",
+  "description": "基於 300+ 場 SEO 面試經驗，模擬低端但有效的基礎文章大綱規劃邏輯。專為低競爭領域設計，開源且嚴禁商用。",
   "requestFramePermissions": []
 }
