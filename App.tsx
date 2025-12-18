@@ -274,6 +274,8 @@ const App: React.FC = () => {
     <div className="max-w-7xl mx-auto py-12 px-6">
       <style>{`
         .editor-container { min-height: 800px; padding: 4rem; outline: none; }
+        /* CSS for contentEditable placeholder */
+        .editor-container[contenteditable]:empty::before { content: attr(data-placeholder); color: #94a3b8; pointer-events: none; }
         .toolbar-btn { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 6px; transition: all 0.15s; color: #475569; }
         .toolbar-btn:hover { background: #f1f5f9; color: #0f172a; }
         .toolbar-group { display: flex; align-items: center; gap: 4px; padding: 0 12px; border-right: 1px solid #e2e8f0; }
@@ -307,7 +309,8 @@ const App: React.FC = () => {
                  <button onClick={copyArticleToClipboard} className="px-6 py-2 bg-slate-900 text-white rounded-xl text-xs font-black shadow-lg">複製</button>
                </div>
             </div>
-            <div ref={editorRef} contentEditable onInput={updateStats} className="editor-container prose prose-indigo max-w-none" placeholder="在此根據藍圖開始撰寫內容..."/>
+            {/* Fix: changed 'placeholder' to 'data-placeholder' for TypeScript compatibility on a div element */}
+            <div ref={editorRef} contentEditable onInput={updateStats} className="editor-container prose prose-indigo max-w-none" data-placeholder="在此根據藍圖開始撰寫內容..."/>
           </div>
         </div>
 

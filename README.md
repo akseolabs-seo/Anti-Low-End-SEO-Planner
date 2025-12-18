@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 消除低端 SEO 計畫：內容戰略規劃師 (Anti-Low-End-SEO-Planner)
 
-# Run and deploy your AI Studio app
+![Status](https://img.shields.io/badge/Status-Experimental-orange)
+![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-red)
+![AI-Powered](https://img.shields.io/badge/AI-Gemini%203%20Pro-blue)
 
-This contains everything you need to run your app locally.
+> **GitHub 標題：** Anti-Low-End-SEO-Planner  
+> **GitHub About：** 🚀 基於 300+ 位專家面談邏輯開發的 SEO 戰略規劃工具。旨在消除資訊不對稱，幫助中小企業主避開低端 SEO 收割，讓市場回歸專業價值。實驗性質、開源且嚴禁商用。
 
-View your app in AI Studio: https://ai.studio/apps/drive/1065g2SnLTwNzVSDwcANKuBVTpX-_xdgA
+---
 
-## Run Locally
+## 💡 專案初衷
 
-**Prerequisites:**  Node.js
+**這不是一個用來打擊所有 SEO 從業者的工具，恰恰相反，這是為了讓專業回歸專業。**
 
+本專案源於對 **300 多位 SEO 專家** 的深度面談與實戰數據提煉。在市場上，許多中小企業主因為預算有限，往往成為「低端 SEO」（僅提供機械化、無策略、低質量的內容代寫）的收割對象。
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 我們的目標：
+1. **賦能業主：** 讓中小企業主能利用與專業人士同等級的邏輯規劃內容，解決低競爭關鍵詞的排名問題。
+2. **減少浪費：** 當業主能自行產出內容大綱，就能省下不必要的「大綱規畫費」，將預算精確投入在更高階的戰略諮詢上。
+3. **重塑市場：** 透過教育與工具，讓業主具備區分「低端收割」與「高端專業」的能力，將市場交還給真正有實力的 SEO 人員。
+
+---
+
+## ✨ 核心功能
+
+- **競爭對手全解析：** 模擬資深 SEO 思考路徑，自動提取對手文章的核心結構與缺失點。
+- **必勝戰略大綱：** 提供詳細的 H2/H3 結構、撰寫指南、建議字數。
+- **視覺佈局建議：** 精確提示圖片安插位置、圖片內容描述，並附帶 AI 繪圖提示詞 (Prompts)。
+- **即時寫作診斷：** 提供寫作實驗室，並根據藍圖對您的草稿進行「深度診斷」，指出缺失區塊與關鍵詞覆蓋率。
+- **權威 FAQ 佈置：** 根據搜尋意圖預測使用者最想知道的問題，提升 Rich Snippets 點擊率。
+
+---
+
+## 🛠 技術架構
+
+- **Core:** React 19 + TypeScript
+- **Styling:** Tailwind CSS
+- **AI Backend:** Google Gemini API (@google/genai)
+  - `gemini-3-pro-preview` (邏輯分析與診斷)
+  - `gemini-3-pro-image-preview` (視覺策略生成)
+
+---
+
+## 🚀 如何使用
+
+1. **獲取 API Key：** 請至 [Google AI Studio](https://aistudio.google.com/) 申請您的 API Key。
+2. **配置參數：** 輸入目標關鍵詞、地區以及競爭對手的網址。
+3. **獲取藍圖：** 系統將生成戰略藍圖，包含文章骨架與圖片策略。
+4. **撰寫與診斷：** 在內建編輯器中寫作，並隨時提交「草稿分析」獲取優化建議。
+
+---
+
+## ⚠️ 免責聲明與規範
+
+1. **嚴禁商用：** 本專案為實驗性質之開源工具，**嚴禁任何個人或組織利用本工具進行營利行為**（如代寫包案收費）。
+2. **專業判斷：** SEO 規則隨時在變。本工具生成之建議僅供參考，發布內容前請務必根據最新演算法趨勢進行核對。
+3. **開源精神：** 歡迎 Fork 與學習，但請保留原始專案宣言，共同維護 SEO 產業生態。
+
+---
+
+## 🤝 聯絡發起人
+
+- **發起人：** AK (SEO 大師計畫)
+- **社群討論：** [Threads @darkseoking](https://www.threads.net/@darkseoking)
+- **願景：** 內容民主化，消除資訊不對稱。
